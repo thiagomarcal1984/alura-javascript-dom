@@ -1,0 +1,47 @@
+Use o Console do navegador para usar o interprestador Java Script.
+
+document.getElementById obtém  o objeto no HTML com o ID "producao":
+    I=> document.getElementById("producao");
+    O=> <input type=​"submit" value=​"Iniciar produção" class=​"producao" id=​"producao">​
+
+Query Selector (document.querySelector) é uma forma de buscar um elemento da 
+mesma forma como você faria ao usar um seletor CSS:
+
+    I=> document.querySelector("#producao");
+    O=> <input type=​"submit" value=​"Teste" class=​"producao" id=​"producao">​
+
+  1. Exemplo de Query Selector (buscando O PRIMEIRO parágrafo do elemento com o id quadro):
+    I=> document.querySelector("#quadro p");
+    O=> <input type=​"submit" value=​"Teste" class=​"producao" id=​"producao">​
+
+  2. Exemplo de Query Selector (buscando TUDO da classe ".estatisticas .estatistica"):
+    I=> document.querySelectorAll(".estatisticas .estatistica");
+    O=> NodeList(4) [div.estatistica, div.estatistica, div.estatistica, div.estatistica]
+        0: div.estatistica
+        1: div.estatistica
+        2: div.estatistica
+        3: div.estatistica
+        length: 4
+        [[Prototype]]: NodeList
+
+Modificando o valor do objeto de ID "produção":
+    I=> document.getElementById("producao").value="Teste";
+
+document.getElementsByClassName obtém uma lista de elementos pelo nome da classe dos elementos:
+    I=> document.getElementsByClassName("estatistica");
+    O=> HTMLCollection(4) [div.estatistica, div.estatistica, div.estatistica, div.estatistica]
+        0: div.estatistica
+        1: div.estatistica
+        2: div.estatistica
+        3: div.estatistica
+        length: 4
+        [[Prototype]]: HTMLCollection
+
+
+******************************************************************************************
+    Métodos da aula: 
+        document.getElementById
+        document.getElementsByClassName
+        document.querySelector
+        document.querySelectorAll
+******************************************************************************************
