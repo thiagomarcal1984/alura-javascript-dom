@@ -45,3 +45,27 @@ document.getElementsByClassName obtém uma lista de elementos pelo nome da class
         document.querySelector
         document.querySelectorAll
 ******************************************************************************************
+
+A palavra reservada "document" no JavaScript é a representação de todo o documento
+HTML. Se você digitar "document" no console do Google Chrome, o HTML inteiro da 
+página é exibido na saída. Já no Firefox é exibido um objeto do tipo HTMLDocument,
+além de exibir suas propriedades (url, forms, firstChild etc.).
+
+
+Métodos para selecionar elementos no HTML
+    document.getElementByID(id) - Selecionar um elemento pelo ID.
+    document.getElementsByTagName(name) - Selecionar um elemento pelo nome.
+    document.getElementsByClassName(name) - Selecionar um elemento pelo nome da classe.
+
+Propriedades e métodos para alterar elementos no HTML
+    element.innerHTML - Esta propriedade obtém ou altera qualquer elemento no HTML, inclusive tags.
+    element.innerText - Esta propriedade permite inserir textos no HTML.
+    element.attribute - Esta propriedade altera o valor de um elemento HTML
+    element.setAttribute(atributo, valor) - Este método altera o valor de um atributo de um elemento HTML.
+
+Adicionando e excluindo elementos
+    document.write() - Escreve no fluxo de saída do HTML.
+    document.appendChild() - Adiciona um elemento HTML.
+    document.removeChild() - Remove um elemento HTML.
+    document.replaceChild() - Substitui um elemento HTML.
+    document.createElement() - Cria um elemento HTML.
