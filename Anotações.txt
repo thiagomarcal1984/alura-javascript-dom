@@ -91,3 +91,8 @@ responder ao evento.
         function dizOi() {
             console.log("Oi")
         }
+
+Mesmo a const sendo declarada após a função, o código funciona sem problemas. 
+Isso acontece devido ao comportamento de hoisting no JavaScript.
+O Hoisting permite que você execute funções antes das suas declarações.
+Hoisting is JavaScript's default behavior of moving declarations to the top.
