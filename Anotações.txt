@@ -242,3 +242,14 @@ JS
         var cores = elementos.getAttribute("cor");
         var tipoElemento = elementos.getAttribute("tipo");
     }
+
+
+Formas de navegar na constante pecas:
+    pecas["bracos"]
+    pecas.bracos = retorna o array de braços.
+    pecas['bracos']['energia']
+    pecas.bracos.energia = retorna o valor da energia para o braço.
+
+O acesso pode ser:
+    com ponto (pai.filho); ou 
+    com colchetes (pai['filho'] ou pai["filho"])
