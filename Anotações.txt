@@ -156,3 +156,25 @@ Alguns métodos em arrays:
     
 Os objetos do DOM tem o chamado parentNode, que é uma referência ao elemento 
 que contém o objeto. 
+
+Para desacoplar o JavaScript do CSS, podemos usar os chamados data attributes.
+Com ele, não será necessário identificar as classes ou os conteúdos dos 
+elementos do que estiver no DOM.
+
+Os data attributes são referenciado com chaves no querySelector:
+    document.querySelectorAll("[data-controle]")
+
+Todos os elementos do DOM cujos atributos começam com "data-" fazem parte do
+objeto DOMStringMap (um array associativo chamado dataset) desse elemento DOM.
+
+Os data attributes podem ou não ter um valor atribuído:
+    // O dataset chamado controle tem um dos valores que é passado como 
+    // parâmetro para a função manipulaDados (+ ou -).
+    elemento.addEventListener("click", (evento) => {
+        manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
+    })
+
+    // Aqui o dataset chamado contador serve apenas para localizar o contador
+    // dentro do objeto controle.
+    const peca = controle.querySelector("[data-contador]")
+
