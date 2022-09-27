@@ -138,3 +138,19 @@ manipulaDados(operacao) em js/main.js.
 O método const querySelectorAll é diferente do método querySelector:
     querySelector retorna apenas o primeiro elemento;
     querySelectorAll retorna uma lista de elementos.
+
+O objeto PointerEvent tem uma propriedade target, que é onde o evento aconteceu.
+O código de agora inclui as funções de somar/subtrair, mas o alvo do cálculo é
+só o campo do braço. Falta contextualizar o código para cada elemento do robô.
+
+Operações sobre arrays em JavaScript: 
+https://www.alura.com.br/artigos/javascript-para-que-serve-array
+
+Alguns métodos em arrays: 
+    forEach(function(parms)) = aplica uma função para cada elemento do array.
+    indexOf('elemento') = obtém a posição do elemento 'elemento'.
+    push('elemento') = acrescenta 'elemento' no fim do array.
+    unshift('elemento') = acrescenta 'elemento' no início do array.
+    shift() = remove o primeiro elemento início do array.
+    splice(posicao, numeroARemover) = remove elementos a partir de uma posição.
+    
