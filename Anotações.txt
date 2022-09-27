@@ -69,3 +69,25 @@ Adicionando e excluindo elementos
     document.removeChild() - Remove um elemento HTML.
     document.replaceChild() - Substitui um elemento HTML.
     document.createElement() - Cria um elemento HTML.
+
+Convenções: 
+    separar o JavaScript num arquivo separado (geralmente chamado js/main.js).
+    carregar o arquivo após todo o carregamento do HTML (antes do fim do body).
+
+
+Para que um elemento passe a ouvir um evento, precisamos usar o método 
+addEventListener(nomeDoEvento, nomeDaFuncao).
+
+O parâmetro "nome da função" não pode armazenar um código JavaScript direto 
+(ex: alert, console.log etc.). É necessário fornecer uma função que vai 
+responder ao evento.
+
+    Errado: 
+        robotron.addEventListener("click", alert("oi"))
+
+    Certo: 
+        robotron.addEventListener("click", dizOi)
+
+        function dizOi() {
+            console.log("Oi")
+        }
