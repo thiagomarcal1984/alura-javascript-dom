@@ -131,3 +131,10 @@ funções declaradas/nomeadsa podem ser reusadas a partir de qualquer elemento.
 
 Em JavaScript, implicitamente os valores são convertidos para String. Para
 converter para String, use a função parseInt().
+
+Parametrize funções que tem comportamento repetido. Veja o exemplo da função
+manipulaDados(operacao) em js/main.js.
+
+O método const querySelectorAll é diferente do método querySelector:
+    querySelector retorna apenas o primeiro elemento;
+    querySelectorAll retorna uma lista de elementos.
