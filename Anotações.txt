@@ -154,3 +154,5 @@ Alguns métodos em arrays:
     shift() = remove o primeiro elemento início do array.
     splice(posicao, numeroARemover) = remove elementos a partir de uma posição.
     
+Os objetos do DOM tem o chamado parentNode, que é uma referência ao elemento 
+que contém o objeto. 
