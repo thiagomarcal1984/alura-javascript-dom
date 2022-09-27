@@ -128,3 +128,6 @@ PointerEvent. Com isso, temos mais poder sobre o que será feito com JavaScript.
 
 Funções anônimas são usadas apenas a partir de onde foram declaradas; já as 
 funções declaradas/nomeadsa podem ser reusadas a partir de qualquer elemento.
+
+Em JavaScript, implicitamente os valores são convertidos para String. Para
+converter para String, use a função parseInt().
