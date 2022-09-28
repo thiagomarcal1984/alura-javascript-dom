@@ -253,3 +253,8 @@ Formas de navegar na constante pecas:
 O acesso pode ser:
     com ponto (pai.filho); ou 
     com colchetes (pai['filho'] ou pai["filho"])
+
+Vercel é uma plataforma de deploy de aplicações JavaScript. Ela busca código a 
+partir de um repositório git (gitlab, github etc.) e implanta a aplicação.
+
+https://vercel.com/
